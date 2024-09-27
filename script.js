@@ -245,7 +245,6 @@ function dragOver(e) {
 }
 
 function dropShip(e) {
-    console.log('drop')
     const startId = e.target.id;
     const ship = ships[draggedShip.id];
 
@@ -335,8 +334,6 @@ function playerAttack(e) {
         };
 
     } else {
-
-        console.log('miss')
         block.classList.add('miss');
 
         document.querySelectorAll('#computer .block').forEach(block => {
@@ -394,7 +391,6 @@ function computerAttack(possibleBlock) {
         block.classList.add('miss');
 
         if (doubleTurnComputer) {
-            console.log('double turn computer')
             doubleTurnComputer = false;
             computerAttack();
         } else {
@@ -407,15 +403,12 @@ function computerAttack(possibleBlock) {
 function checkWinner() {
     const allPlayerHits = document.querySelectorAll('#computer .hit');
     const allComputerHits = document.querySelectorAll('#player .hit');
-    console.log(allPlayerHits.length)
-    console.log(allComputerHits.length)
     if (allPlayerHits.length === 17) {
         turnDisplay.innerHTML = "You win!";
         infoDisplay.innerHTML = "Congratulations!";
         document.querySelectorAll('#computer .block').forEach(block => {
             block.removeEventListener('click', playerAttack);
         });
-        console.log("Partie terminée")
         return true;
     } else if (allComputerHits.length === 17) {
         turnDisplay.innerHTML = "Computer wins!";
@@ -423,10 +416,8 @@ function checkWinner() {
         document.querySelectorAll('#computer .block').forEach(block => {
             block.removeEventListener('click', playerAttack);
         });
-        console.log("Partie terminée")
         return true;
     }
-    console.log("Partie non terminée")
     return false;
 }
 
@@ -679,8 +670,6 @@ function selfHit(user) {
     while (hitBlocks.length < 3) {
         let randomIndex = Math.floor(Math.random() * allUserBlocks.length);
         let block = allUserBlocks[randomIndex];
-        console.log(block)
-        console.log(randomIndex)
         if (!block.classList.contains('miss') && !block.classList.contains('hit') && !hitBlocks.includes(block)) {
             hitBlocks.push(block)
         }
@@ -949,8 +938,6 @@ function addRollAnimation(user) {
 
     swiperContainer.appendChild(swiperWrapper);
     optionContainer.appendChild(swiperContainer);
-
-    console.log('Ajouté swiper');
 
     const totalSlides = slidesData.length; // Nombre total de slides
 
