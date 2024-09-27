@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Arcade';
+    src: url("/assets/fonts/ARCADE_N.ttf");
+}
+
+
+
+html {
+    font-size: 16px;
+    font-family: 'Arcade', sans-serif;
+    background-color: #000000;
+    color: #00FF00;
+}
+
+.option__container {
+    width: 500px;
+    height: 110px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+    border: 2px solid #00FF00;
+}
+
+
+.destroyer-preview {
+    width: 40px;
+    height: 20px;
+    margin: 3px;
+}
+
+.destroyer {
+    background-color: blue;
+    display: flex;
+}
+
+.destroyer div {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.submarine-preview {
+    width: 60px;
+    height: 20px;
+    margin: 3px;
+}
+
+.submarine {
+    background-color: blue;
+    display: flex;
+}
+
+.submarine div {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.battleship-preview {
+    width: 80px;
+    height: 20px;
+    margin: 3px;
+}
+
+.battleship {
+    background-color: blue;
+    display: flex;
+}
+
+.battleship div {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.carrier-preview {
+    width: 100px;
+    height: 20px;
+    margin: 3px;
+}
+
+.carrier {
+    background-color: blue;
+    display: flex;
+}
+
+.carrier div {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.cruiser-preview {
+    width: 60px;
+    height: 20px;
+    margin: 3px;
+}
+
+.cruiser {
+    background-color: blue;
+    display: flex;
+}
+
+.cruiser div {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+#gamesboard__container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gamesboard {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.block:hover {
+    background-color: grey;
+}
+
+.button__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#reset_button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: #FF0000;
+    background-color: #000000;
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;
+}
+
+#reset_button:hover {
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 20px #FFFFFF, 0 0 30px #FF0000, 0 0 40px #FFFFFF;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#flip_button,
+#start_button,
+#random_button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #00FF00;
+    background-color: #000000;
+    border: 3px solid #00FF00;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+}
+
+#flip_button:hover,
+#start_button:hover,
+#random_button:hover {
+    transform: scale(1.1);
+}
+
+#player {
+    cursor: pointer;
+    box-shadow: 0 0 10px blue, 0 0 20px blue;
+}
+
+#computer {
+    cursor: pointer;
+    box-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+
+.player-taken {
+    background-color: blue;
+}
+
+.hit {
+    background-image: url('/assets/img/200016.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.miss {
+    background-image: url('/assets/img/miss.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.number-target {
+    color: #00FF00;
+    font-size: 20px;
+
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+}
+
+.taken {
+    background-color: red;
+}
+
+.disabled-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #666666;
+    /* Couleur de texte grise pour désactiver */
+    background-color: #333333;
+    /* Fond sombre pour indiquer l'inactivité */
+    border: 3px solid #666666;
+    /* Bordure grise pour indiquer l'inactivité */
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: not-allowed;
+    /* Curseur "non autorisé" pour indiquer que le bouton est inactif */
+    transition: all 0.3s ease;
+    box-shadow: none;
+    cursor: not-allowed;
+}

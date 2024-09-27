@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="game__info">
+        <p>Turn: <span id="turn-display"></span></p>
+        <p>Info: <span id="info"></span></p>
+        <button id="reset_button">reset</button>
+    </div>
+
+    <div id="gamesboard__container">
+
+    </div>
+
+    <div class="option__container">
+        <div id="0" class="destroyer-preview destroyer" draggable="true">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="1" class="submarine-preview submarine" draggable="true">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="2" class="cruiser-preview cruiser" draggable="true">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="3" class="battleship-preview battleship" draggable="true">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="4" class="carrier-preview carrier" draggable="true">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="button__container">
+        <button id="random_button">random</button>
+        <button id="flip_button">flip</button>
+        <button id="start_button">start</button>
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
