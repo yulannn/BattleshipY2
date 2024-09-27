@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Arcade';
-    src: url("/assets/fonts/ARCADE_N.ttf");
+    src: url("assets/fonts/ARCADE_N.ttf");
 }
 
 
@@ -217,14 +217,14 @@ html {
 }
 
 .hit {
-    background-image: url('/assets/img/200016.webp');
+    background-image: url('assets/img/200016.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .miss {
-    background-image: url('/assets/img/miss.webp');
+    background-image: url('assets/img/miss.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
