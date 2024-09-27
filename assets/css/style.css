@@ -250,16 +250,12 @@ html {
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
     color: #666666;
-    /* Couleur de texte grise pour désactiver */
     background-color: #333333;
-    /* Fond sombre pour indiquer l'inactivité */
     border: 3px solid #666666;
-    /* Bordure grise pour indiquer l'inactivité */
     border-radius: 8px;
     padding: 10px 20px;
     text-transform: uppercase;
     cursor: not-allowed;
-    /* Curseur "non autorisé" pour indiquer que le bouton est inactif */
     transition: all 0.3s ease;
     box-shadow: none;
     cursor: not-allowed;
